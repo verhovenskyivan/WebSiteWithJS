@@ -18,33 +18,67 @@
                 </div>            
             </nav>
             <div class ="Information">
+                <div class ="overlay"></div>
+                <img src="images/avatar.jpeg" class="avatar"
+                height="150"
+                width="150">                
                 <div id="circle">
                     <div class ="feature one">
-                        <img src ="images/Homepage.png"
+                        <img src ="images/JS_image.png"
                          height="70">
                          <div>
                             <h1></h1>
-                                <p>Back to the start</p>
+                                <p>JavaScript</p>
                          </div>
                     </div>
                     <div class ="feature two">
-                        <img src="images/About.png"
+                        <img src="images/CSS_logo.png"
                         height="75">
                         <h1></h1>
-                        <p>Shortly about me</p>
+                        <p>CSS</p>
                     </div>
                     <div class ="feature three">
-                        <img src="images/Skills.png"
+                        <img src="images/HTML_logo.png"
                         height="70">
                         <h1></h1>
-                        <p>What can i do</p>
+                        <p>HTML</p>
                     </div>
                     <div class ="feature four">
-                        <img src="images/tg_logo.png">
-                        <p>Contact me</p>
+                        <img src="images/React_logo.png"
+                        height="75"
+                        width="95">
+                        <p>React</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="controls">
+            <img src="images/arrow.png" id="upBtn"
+            height="20">
+            <h3>Scroll</h3>
+            <img src="images/arrow.png" id="downBtn"
+            height="20">
+        </div>
+        <script>
+            var circle = document.getElementById("circle");
+            var upBtn = document.getElementById("upBtn");
+            var downBtn = document.getElementById("downBtn");
+
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+
+            upBtn.onclick = function(){
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+
+            downBtn.onclick = function(){
+                rotateSum = rotateValue + "rotate(+90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+        </script>
     </body>
 </html>
