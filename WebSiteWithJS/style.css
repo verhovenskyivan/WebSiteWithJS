@@ -3,6 +3,26 @@
     padding:0;
     font-family: sans-serif;
 }
+header{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+#About{
+background-color: #8ec5fc;
+}
+#Skills{
+background-color:  #8ec5fc;
+}
+#Contact{
+ background:#8ec5fc;
+}
 .main{
     width: 100%;
     height: 100vh;
@@ -10,23 +30,21 @@
     overflow: hidden;
     background: linear-gradient(to right, #9c27b0,#8ecdff);
 }
-
 nav {
-    width: 80%;
+    width: 100%;
     position: sticky;
     margin:20px auto;
     z-index: 1;
     display: flex;
     align-items: center;
+    left: 500px;
 }
 .logo {
-    flex-basis: 20%;   
+    flex-basis: 20%; 
 }
-
 .logo img {
     width: 150px;
 }
-
 .nav-links{
     flex:1;
     text-align: right;
@@ -39,7 +57,6 @@ nav {
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
-
 }
 .information {
     width:1000px;
@@ -71,36 +88,37 @@ nav {
 .feature div p{
  margin-top: 8px;
 }
-
 .one{
-    top: 250px;
-    right: 620px; 
+    top: 420px;
+    right: 250px; 
     text-align: center;
     color: white;
-    filter:hue-rotate()
+    filter:hue-rotate();
 }
 .two{
-    top: 270px;
-    right: 270px; 
+    top:690px;
+    left: 510px; 
     text-align: center;
     color: white;
+    width: 100;
     filter:hue-rotate();
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
+     
 }
 .three{
-    top: 600px;
-    right: 270px;    
-    color: white;
-    filter:hue-rotate();
-    transform: rotate(-180deg);
-}
-.four{
-    top: 600px;
-    right: 650px;
+    bottom: 400px;
+    left: 250px;
     width: 95px;
     color: white;
     filter:hue-rotate();
-    transform: rotate(-270deg);
+    transform: rotate(180deg);
+}
+.four{
+    bottom: 670px;
+    left: 400px;
+    filter: hue-rotate();
+    width: 90px;
+    transform: rotate(270deg);
 }
 .two div p {
     margin-top: 8px;
@@ -140,7 +158,10 @@ nav {
  width: 0;
  height: 0;
  border-top: 500px solid white;
- border-right: 500px solid ,transparent;
- border-bottom: 500px solid ,white;
- border-left: 500px solid ,white;
+ border-right: 500px solid transparent;
+ border-bottom: 465px solid white;
+ border-left: 500px solid white;
+ position: absolute;
+ left: 0;
+ top: 0;
 }
