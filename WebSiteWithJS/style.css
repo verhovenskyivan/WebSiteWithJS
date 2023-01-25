@@ -20,16 +20,21 @@ section{
 background-color: #8ec5fc;
 }
 #Skills{
-background-color:  #8ec5fc;
+background-color:  #b490ca;
 }
 #Contact{
- background-color:#8ec5fc;
+ background-color:#fed6e3;
 }
 
 h1{
     position: absolute;
     top:10%;
     left:40%;
+}
+h2{
+    position: absolute;
+    top:30%;
+    left:20%;
 }
 .main{
     width: 100%;
