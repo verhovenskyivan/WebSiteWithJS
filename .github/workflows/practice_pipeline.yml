@@ -23,6 +23,7 @@ jobs:
    
  my_deploy:
    runs-on: ubuntu-latest
+   needs: [my_test] 
    steps:
    - name: Print Hello message
      run: echo "Hello Worlds from Deploy Job"
