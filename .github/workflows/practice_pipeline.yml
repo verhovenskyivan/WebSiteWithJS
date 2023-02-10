@@ -1,0 +1,26 @@
+#-------------------------------
+# Git hub actions practice - 1
+#-------------------------------
+
+
+name: My-Practice
+on:
+   push:
+       branches: 
+        -master
+        
+jobs:
+ my_test:
+     
+   runs-on: ubuntu-latest
+   steps:
+   -name: Print Hello message
+   run: echo "Hello World from Test Job"
+   
+   
+   
+ my_deploy:
+   runs-on: ubuntu-latest
+   steps:
+   -name: Print Hello message
+   run: echo "Hello Worlds from Deploy Job"
